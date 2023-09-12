@@ -22,8 +22,8 @@ function rollTheDice() {
     let diceNum1 = document.querySelector(".img1");
     let diceNum2 = document.querySelector(".img2");
 
-    diceNum1.setAttribute("src", "rolldice.gif")
-    diceNum2.setAttribute("src", "rolldice.gif")
+    diceNum1.setAttribute("src", "jpg/rolldice.gif")
+    diceNum2.setAttribute("src", "jpg/rolldice.gif")
 
     let result = document.querySelector('h1')
     result.innerHTML = "";
@@ -32,8 +32,8 @@ function rollTheDice() {
         let randomNumber1 = Math.floor(Math.random() * 6) + 1;
         let randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
-        diceNum1.setAttribute('src', 'dice' + randomNumber1 + '.JPG');
-        diceNum2.setAttribute('src', 'dice' + randomNumber2 + '.JPG');
+        diceNum1.setAttribute('src', 'jpg/dice' + randomNumber1 + '.JPG');
+        diceNum2.setAttribute('src', 'jpg/dice' + randomNumber2 + '.JPG');
 
         //determine the winner
         if (randomNumber1 === randomNumber2) {
